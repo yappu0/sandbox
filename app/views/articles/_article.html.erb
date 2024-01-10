@@ -1,12 +1,16 @@
-<div id="<%= dom_id article %>">
-  <p>
-    <strong>Title:</strong>
-    <%= article.title %>
-  </p>
+<div class="card" id="<%= dom_id article %>">
+  <div class="card-body">
+    <p>
+      <strong>Title:</strong>
+      <%= article.title %>
+    </p>
 
-  <p>
-    <strong>Body:</strong>
-    <%= article.body %>
-  </p>
-
+    <p>
+      <strong>Body:</strong>
+      <%= article.body %>
+    </p>
+    <p>
+      <%= link_to "Show this article", article %>
+    </p>
+  </div>
 </div>
