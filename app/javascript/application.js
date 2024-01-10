@@ -3,10 +3,8 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
 
-console.log("Hello from application.js")
-
-document.addEventListener('turbo:load', () => {
 // Stripe実装
+document.addEventListener('turbo:load', () => {
   const stripe = Stripe('pk_test_51O1n06Fako1LsI9nA7Gk8hyMJrdSQp3ein0myF12YAvUgSmEeNa2ffdtxlEnIprbuJ89qHAssN5d9hRTf2SKUXzU00gTAl9dqk')
 
 // The items the customer wants to buy

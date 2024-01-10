@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :payments, only: [:create]
+  resources :webhooks, only: [:create]
 
   root "articles#index"
 end

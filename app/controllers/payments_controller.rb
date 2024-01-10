@@ -8,7 +8,6 @@ class PaymentsController < ApplicationController
                                                       enabled: true,
                                                     },
                                                   })
-
     render json: { clientSecret: payment_intent.client_secret }
   end
 end
